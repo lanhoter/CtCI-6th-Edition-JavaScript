@@ -1,4 +1,4 @@
-var urlify = function(str, length) {
+var urlify = function (str, length) {
   // have a pointer to check from start to end
   var strArr = str.split('');
   var pointer = 0;
@@ -10,10 +10,10 @@ var urlify = function(str, length) {
         strArr[i] = str[i - 2];
       }
       strArr[pointer] = '%';
-      strArr[pointer+1] = '2';
-      strArr[pointer+2] = '0';
+      strArr[pointer + 1] = '2';
+      strArr[pointer + 2] = '0';
       console.log(strArr, strArr.length);
-    } 
+    }
     pointer++;
   }
   // if character is a space, move remainder chars by two
